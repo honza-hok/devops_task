@@ -14,6 +14,9 @@ pip-3 install requests
 Running
 -------
 
+chmod u+x ./producer.extension.sh ./consumer.py
+
 while true; do ./producer.extension.sh 2014.06 `date '+%Y-%m-%d'` `date '+%H:%M:%S'`; sleep 11; done
-./consumer.py
+
+python3 ./consumer.py
 
