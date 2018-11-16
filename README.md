@@ -16,7 +16,9 @@ Running
 
 chmod u+x ./producer.extension.sh ./consumer.py
 
+# Terminál 1
 while true; do ./producer.extension.sh 2014.06 `date '+%Y-%m-%d'` `date '+%H:%M:%S'`; sleep 11; done
 
+# Terminál 2
 python3 ./consumer.py
 
